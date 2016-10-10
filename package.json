@@ -1,0 +1,47 @@
+{
+  "name": "victory-brush",
+  "version": "0.1.0",
+  "description": "D3 brush component for React",
+  "main": "lib/index.js",
+  "scripts": {
+    "postinstall": "cd lib || builder run npm:postinstall",
+    "preversion": "builder run npm:preversion",
+    "start": "builder run hot",
+    "test": "builder run check",
+    "version": "builder run npm:version && git add dist && git commit -m \"Commit 'dist/' for publishing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyuplam/victory-brush.git"
+  },
+  "keywords": [
+    "react",
+    "d3",
+    "brush"
+  ],
+  "author": "Terrence Lam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skyuplam/victory-brush/issues"
+  },
+  "homepage": "https://github.com/skyuplam/victory-brush#readme",
+  "devDependencies": {
+    "builder-victory-component-dev": "^3.0.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.2",
+    "enzyme": "^2.4.1",
+    "mocha": "^3.1.1",
+    "react": "^15.3.2",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "builder": "^3.1.0",
+    "builder-victory-component": "^3.0.0",
+    "lodash": "^4.16.4",
+    "victory-core": "^8.0.1"
+  }
+}
